@@ -49,7 +49,8 @@
   <a href="https://line.me/ti/p/EMlQEEs9HM" class="icon line"><i class="fab fa-line"></i></a>
   <a href="https://www.facebook.com/share/1C6vxHSXoo/?mibextid=wwXIfr" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
 </div>
-
+<br>
+<br>
 <!-- ===== Intro ===== -->
 <section class="intro-text">
   <h2>ร้านลุงเริน เฟอร์นิเจอร์ไม้</h2>
@@ -62,67 +63,99 @@
 
 <!-- ===== Why Us ===== -->
 <section class="why-us">
-  <h2 class="section-title">ทำไมต้องร้านลุงเริน</h2>
+
+  <h2 class="section-title animate">ทำไมต้องร้านลุงเริน</h2>
 
   <div class="why-grid">
-    <div class="why-card">
+
+    <div class="why-card animate">
       <i class="fas fa-hammer"></i>
       <h3>งานทำมือคุณภาพ</h3>
       <p>ผลิตโดยช่างฝีมือ แข็งแรง ใช้งานได้นาน</p>
     </div>
 
-    <div class="why-card">
+    <div class="why-card animate">
       <i class="fas fa-ruler-combined"></i>
       <h3>สั่งทำตามขนาด</h3>
       <p>ปรับขนาด สี และรูปแบบได้</p>
     </div>
 
-    <div class="why-card">
+    <div class="why-card animate">
       <i class="fas fa-tree"></i>
       <h3>ไม้แท้</h3>
       <p>คัดไม้คุณภาพ ขัดเรียบทุกชิ้น</p>
     </div>
 
-    <div class="why-card">
+    <div class="why-card animate">
       <i class="fas fa-truck"></i>
       <h3>จัดส่งทั่วประเทศ</h3>
       <p>แพ็คแน่นหนา ส่งถึงหน้าบ้าน</p>
     </div>
+
   </div>
+
 </section>
 
 <!-- ===== Products ===== -->
 <section class="recommended">
-  <h2 class="section-title">สินค้าแนะนำ</h2>
+
+  <h2 class="section-title animate">สินค้าแนะนำ</h2>
 
   <div class="product-grid">
-    <div class="product-card">
+
+    <div class="product-card animate">
       <img src="img/g7.jpg">
       <h3>เก้าอี้ไม้</h3>
       <p class="price">฿250</p>
       <a href="g1.html" class="btn">ดูสินค้า</a>
     </div>
 
-    <div class="product-card">
+    <div class="product-card animate">
       <img src="img/t1.jpg">
       <h3>โต๊ะไม้</h3>
       <p class="price">฿500</p>
       <a href="t4.html" class="btn">ดูสินค้า</a>
     </div>
 
-    <div class="product-card">
+    <div class="product-card animate">
       <img src="img/cc1.png">
       <h3>ชั้นวางของไม้</h3>
       <p class="price">฿350</p>
       <a href="cc.html" class="btn">ดูสินค้า</a>
     </div>
-  </div>
-</section>
 
+  </div>
+
+</section>
 <!-- ===== Footer ===== -->
 <footer>
   © 2025 ร้านลุงเรินเฟอร์นิเจอร์
 </footer>
+<script>
 
+const observer = new IntersectionObserver((entries)=>{
+
+  entries.forEach((entry,index)=>{
+
+    if(entry.isIntersecting){
+
+      setTimeout(()=>{
+        entry.target.classList.add("show");
+      }, index * 200);
+
+    }
+
+  });
+
+});
+
+
+document.querySelectorAll(".animate").forEach(el=>{
+
+  observer.observe(el);
+
+});
+
+</script>
 </body>
 </html>
