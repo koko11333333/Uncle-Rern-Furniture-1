@@ -1,9 +1,5 @@
-/* ===== PROFESSIONAL FONT IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-
-
-/* ===== BODY ===== */
 
 body{
 
@@ -395,4 +391,495 @@ footer *{
 
 .login-icon i{
   pointer-events:none;
+}
+
+/* ===============================
+   HERO PREMIUM EFFECT
+================================ */
+
+.about-hero{
+  position:relative;
+}
+
+.about-hero-img{
+  position:relative;
+}
+
+.about-hero-img::after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.25),
+      transparent
+    );
+
+  border-radius:20px;
+}
+
+
+/* animation fade in */
+
+.about-hero-text{
+  animation:fadeSlideUp 1s ease forwards;
+}
+
+.about-hero-img{
+  animation:fadeSlideRight 1.2s ease forwards;
+}
+
+@keyframes fadeSlideUp{
+
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+@keyframes fadeSlideRight{
+
+  from{
+    opacity:0;
+    transform:translateX(60px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+
+}
+
+
+/* ===============================
+   STORY IMAGE HOVER
+================================ */
+
+.about-img{
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.about-img img{
+
+  transition:.6s;
+
+}
+
+.about-img:hover img{
+
+  transform:scale(1.12);
+
+}
+
+
+/* ===============================
+   FEATURE CARD PREMIUM
+================================ */
+
+.feature-box{
+
+  position:relative;
+  overflow:hidden;
+  transition:.4s;
+
+}
+
+
+.feature-box::before{
+
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(139,90,43,.12),
+      transparent
+    );
+
+  opacity:0;
+
+  transition:.4s;
+
+}
+
+
+.feature-box:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.feature-box:hover::before{
+
+  opacity:1;
+
+}
+
+.feature-box i{
+
+  transition:.4s;
+
+}
+
+.feature-box:hover i{
+
+  transform:scale(1.2);
+
+  color:#a66b35;
+
+}
+
+
+/* ===============================
+   GALLERY PREMIUM EFFECT
+================================ */
+
+.gallery-grid img{
+
+  cursor:pointer;
+  position:relative;
+
+}
+
+.gallery-grid img:hover{
+
+  transform:scale(1.08);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+/* ===============================
+   SECTION TITLE STYLE
+================================ */
+
+.about-features h2,
+.about-gallery h2,
+.about-text h2{
+
+  position:relative;
+
+  display:inline-block;
+
+}
+
+.about-features h2::after,
+.about-gallery h2::after,
+.about-text h2::after{
+
+  content:"";
+
+  position:absolute;
+
+  bottom:-8px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:60%;
+  height:3px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      #8b5a2b,
+      transparent
+    );
+
+}
+
+
+/* ===============================
+   SMOOTH SCROLL EFFECT
+================================ */
+
+html{
+
+  scroll-behavior:smooth;
+
+}
+
+
+/* ===============================
+   IMAGE SHADOW
+================================ */
+
+.about-hero-img img,
+.about-img img,
+.gallery-grid img{
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.18);
+
+}
+
+
+/* ===============================
+   HOVER ZOOM TEXT EFFECT
+================================ */
+
+.about-text h2{
+
+  transition:.3s;
+
+}
+
+.about-text h2:hover{
+
+  transform:translateX(5px);
+
+  color:#8b5a2b;
+
+}
+
+
+/* ===============================
+   FEATURE ICON BACKGROUND
+================================ */
+
+.feature-box i{
+
+  background:
+
+    linear-gradient(
+      145deg,
+      #f5e4d3,
+      #fff
+    );
+
+  width:70px;
+  height:70px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:auto;
+  margin-bottom:15px;
+
+}
+
+
+
+.about-hero-text h1{
+
+  position:relative;
+  display:inline-block;
+
+}
+
+.about-hero-text h1::after{
+
+  content:"";
+  position:absolute;
+
+  bottom:-10px;
+  left:50%;
+  transform:translateX(-50%);
+
+  width:60%;
+  height:3px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      #8b5a2b,
+      transparent
+    );
+
+}
+
+/* ===============================
+   HERO IMAGE HOVER ZOOM
+================================ */
+
+.about-hero-img{
+
+  overflow:hidden;
+
+  border-radius:20px;
+
+}
+
+.about-hero-img img{
+
+  width:100%;
+
+  border-radius:20px;
+
+  transition:transform .6s cubic-bezier(.22,1,.36,1);
+
+}
+
+
+.about-hero-img:hover img{
+
+  transform:scale(1.12);
+
+}
+
+body{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  font-size:16px;
+
+  letter-spacing:.2px;
+
+  color:#1f2937;
+
+}
+
+
+/* =========================
+MAIN TITLE
+========================= */
+
+h1{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:600;
+
+  letter-spacing:1.8px;
+
+}
+
+
+/* =========================
+SUB TITLE
+========================= */
+
+h2,
+h3,
+.section-title{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:500;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+MENU
+========================= */
+
+.menu a{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.8px;
+
+}
+
+
+/* =========================
+BUTTON
+========================= */
+
+.btn,
+.hero-btn{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.5px;
+
+}
+
+
+/* =========================
+PRICE
+========================= */
+
+.price{
+
+  font-family:
+  'Space Grotesk',
+  sans-serif;
+
+  font-weight:600;
+
+  font-size:20px;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+PARAGRAPH
+========================= */
+
+p{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  color:#6b7280;
+}
+@media (max-width:768px){
+  nav{
+    padding:12px 16px;
+    flex-wrap:wrap;
+  }
+
+  nav .logo img{
+    height:42px;
+  }
+
+  nav .menu{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+  }
 }
