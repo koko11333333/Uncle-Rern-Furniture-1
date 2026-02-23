@@ -1,96 +1,116 @@
-/* ===== PROFESSIONAL FONT IMPORT ===== */
+/* =========================
+ULTRA MODERN FURNITURE FONT SYSTEM 2026
+Luxury • Creative • Unique
+========================= */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500&display=swap');
 
 
-/* ===== BODY ===== */
+/* =========================
+BODY TEXT
+========================= */
 
 body{
 
-  font-family:'DM Sans',sans-serif;
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
 
   font-weight:400;
 
   font-size:16px;
 
-  letter-spacing:.3px;
+  letter-spacing:.2px;
 
   color:#1f2937;
 
 }
 
 
-/* ===== MAIN TITLE ===== */
+/* =========================
+MAIN TITLE
+========================= */
 
 h1{
 
-  font-family:'Playfair Display',serif;
-
-  font-weight:700;
-
-  letter-spacing:1.2px;
-
-}
-
-
-/* ===== SUB TITLE ===== */
-
-h2,h3,.section-title{
-
-  font-family:'Playfair Display',serif;
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
 
   font-weight:600;
 
-  letter-spacing:.5px;
+  letter-spacing:1.8px;
 
 }
 
 
-/* ===== MENU ===== */
+/* =========================
+SUB TITLE
+========================= */
 
-.menu a{
+h2,
+h3,
+.section-title{
 
-  font-family:'DM Sans',sans-serif;
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
 
   font-weight:500;
 
-  letter-spacing:.5px;
+  letter-spacing:1px;
 
 }
 
 
-/* ===== BUTTON ===== */
+
 
 .btn,
 .hero-btn{
 
-  font-family:'DM Sans',sans-serif;
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
 
   font-weight:500;
-
-}
-
-
-/* ===== PRICE ===== */
-
-.price{
-
-  font-family:'DM Sans',sans-serif;
-
-  font-weight:700;
-
-  font-size:20px;
 
   letter-spacing:.5px;
 
 }
 
 
-/* ===== DESCRIPTION ===== */
+/* =========================
+PRICE
+========================= */
+
+.price{
+
+  font-family:
+  'Space Grotesk',
+  sans-serif;
+
+  font-weight:600;
+
+  font-size:20px;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+PARAGRAPH
+========================= */
 
 p{
 
-  font-family:'DM Sans',sans-serif;
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
 
   font-weight:400;
 
@@ -124,7 +144,7 @@ html,body{
 }
 
 body{
-  font-family:'Prompt',sans-serif;
+  
   background:
     linear-gradient(180deg,#faf8f5,var(--bg-light));
   color:var(--text-dark);
@@ -178,6 +198,7 @@ nav .menu a{
   padding:6px 0;
   transition:color .3s ease;
 }
+
 
 nav .menu a:hover{
   color:#f5d9b5;
@@ -292,7 +313,7 @@ nav img{height:55px;border-radius:6px;}
   color:#fff;
   text-align:center;
 }
-.hero h1{font-size:3rem;}
+
 .hero p{margin:12px 0 20px;}
 .hero-btn{
   padding:14px 40px;
@@ -696,5 +717,451 @@ transform: translateY(0);
 .product-card:hover img{
 
   transform:scale(1.1);
+
+}
+
+/* =========================
+HERO BUTTON LUXURY EFFECT
+ใส่ต่อท้ายไฟล์ CSS
+========================= */
+
+.hero-btn{
+
+  display:inline-block;
+  margin-top:25px;
+
+  padding:15px 42px;
+
+  font-size:17px;
+  font-weight:600;
+  letter-spacing:.8px;
+
+  color:#fff;
+  text-decoration:none;
+
+  background:
+  linear-gradient(
+    135deg,
+    #8b5a2b,
+    #5a3a22
+  );
+
+  border-radius:50px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.35),
+  inset 0 1px 0 rgba(255,255,255,.2);
+
+  position:relative;
+  overflow:hidden;
+
+  transition:.35s cubic-bezier(.22,1,.36,1);
+
+  animation:heroBtnFloat 3.5s ease-in-out infinite;
+
+}
+
+
+/* ===== ลอยขึ้นลง ===== */
+
+@keyframes heroBtnFloat{
+
+  0%,100%{
+
+    transform:translateY(0);
+
+  }
+
+  50%{
+
+    transform:translateY(-10px);
+
+  }
+
+}
+
+
+
+/* ===== hover ===== */
+
+.hero-btn:hover{
+
+  transform:translateY(-14px) scale(1.05);
+
+  box-shadow:
+
+  0 25px 55px rgba(0,0,0,.55),
+
+  0 0 25px rgba(139,90,43,.6);
+
+}
+
+
+
+/* ===== ตอนกด ===== */
+
+.hero-btn:active{
+
+  transform:translateY(-3px) scale(.96);
+
+  box-shadow:
+
+  0 8px 20px rgba(0,0,0,.4);
+
+}
+
+
+
+/* ===== แสงวิ่ง ===== */
+
+.hero-btn::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:-100%;
+
+  width:100%;
+  height:100%;
+
+  background:
+
+  linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.45),
+    transparent
+  );
+
+  transition:.7s;
+
+}
+
+.hero-btn:hover::before{
+
+  left:100%;
+
+}
+
+
+
+/* ===== glow ตอน hover ===== */
+
+.hero-btn::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  border-radius:50px;
+
+  opacity:0;
+
+  box-shadow:
+
+  0 0 30px rgba(139,90,43,.6);
+
+  transition:.4s;
+
+}
+
+.hero-btn:hover::after{
+
+  opacity:1;
+
+}
+
+/* =========================
+MOBILE NAVBAR FIX
+========================= */
+
+@media (max-width:768px){
+
+  nav{
+
+    padding:12px 16px;
+
+    flex-wrap:wrap;
+
+  }
+
+  nav .logo img{
+
+    height:42px;
+
+  }
+
+  nav .menu{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    margin-top:10px;
+
+  }
+
+
+
+}
+
+
+/* =========================
+LUXURY FURNITURE FONT SYSTEM 2026
+Premium • Modern • Thai Support
+========================= */
+
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap');
+
+
+/* =========================
+BODY TEXT
+========================= */
+
+body{
+
+  font-family:
+  'Plus Jakarta Sans',
+  'Noto Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  font-size:16px;
+
+  letter-spacing:.3px;
+
+  color:#1f2937;
+
+}
+
+
+/* =========================
+MAIN TITLE
+========================= */
+
+h1{
+
+  font-family:
+  'Playfair Display',
+  'Noto Sans Thai',
+  serif;
+
+  font-weight:700;
+
+  letter-spacing:1.2px;
+
+}
+
+
+/* =========================
+SUB TITLE
+========================= */
+
+h2,
+h3,
+.section-title{
+
+  font-family:
+  'Playfair Display',
+  'Noto Sans Thai',
+  serif;
+
+  font-weight:600;
+
+  letter-spacing:.6px;
+
+}
+
+.btn,
+.hero-btn{
+
+  font-family:
+  'Plus Jakarta Sans',
+  'Noto Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+}
+
+
+/* =========================
+PRICE
+========================= */
+
+.price{
+
+  font-family:
+  'Plus Jakarta Sans',
+  sans-serif;
+
+  font-weight:600;
+
+  font-size:20px;
+
+  letter-spacing:.5px;
+
+}
+
+
+/* =========================
+PARAGRAPH
+========================= */
+
+p{
+
+  font-family:
+  'Plus Jakarta Sans',
+  'Noto Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  color:#6b7280;
+
+}
+
+
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500&display=swap');
+
+
+/* =========================
+BODY TEXT
+========================= */
+
+body{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  font-size:16px;
+
+  letter-spacing:.2px;
+
+  color:#1f2937;
+
+}
+
+
+/* =========================
+MAIN TITLE
+========================= */
+
+h1{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:600;
+
+  letter-spacing:1.8px;
+
+}
+
+
+/* =========================
+SUB TITLE
+========================= */
+
+h2,
+h3,
+.section-title{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:500;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+MENU
+========================= */
+
+.menu a{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.8px;
+
+}
+
+
+/* =========================
+BUTTON
+========================= */
+
+.btn,
+.hero-btn{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.5px;
+
+}
+
+
+/* =========================
+PRICE
+========================= */
+
+.price{
+
+  font-family:
+  'Space Grotesk',
+  sans-serif;
+
+  font-weight:600;
+
+  font-size:20px;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+PARAGRAPH
+========================= */
+
+p{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  color:#6b7280;
+
 
 }
