@@ -45,7 +45,7 @@
     <!-- เล่มที่ 1 -->
     <div class="catalog-book">
       <div class="book-cover">
-        <img src="img/t1.png" alt="Catalog 01">
+        <img src="img/1.png" alt="Catalog 01">
       </div>
       <h3>Catalog Vol.01</h3>
       <p>โต๊ะ & เก้าอี้ไม้พาเลท</p>
@@ -65,6 +65,35 @@
 
 
 <footer>© 2025 ลุงเรินเฟอร์นิเจอร์</footer>
+<script>
 
+/* ===== PREMIUM SCROLL REVEAL ===== */
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach((entry)=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.2});
+
+
+document.querySelectorAll(
+
+'.catalog-title, .catalog-subtitle, .catalog-book'
+
+).forEach((el)=>{
+
+observer.observe(el);
+
+});
+
+</script>
 </body>
 </html>
