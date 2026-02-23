@@ -1,7 +1,4 @@
-/* ===== PROFESSIONAL FONT IMPORT ===== */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500&display=swap');
 
 /* ===== BODY ===== */
 
@@ -381,4 +378,148 @@ footer *{
 
 .login-icon i{
   pointer-events:none;
+}
+
+body{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  font-size:16px;
+
+  letter-spacing:.2px;
+
+  color:#1f2937;
+
+}
+
+
+/* =========================
+MAIN TITLE
+========================= */
+
+h1{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:600;
+
+  letter-spacing:1.8px;
+
+}
+
+
+/* =========================
+SUB TITLE
+========================= */
+
+h2,
+h3,
+.section-title{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:500;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+MENU
+========================= */
+
+.menu a{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.8px;
+
+}
+
+
+/* =========================
+BUTTON
+========================= */
+
+.btn,
+.hero-btn{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.5px;
+
+}
+
+
+/* =========================
+PRICE
+========================= */
+
+.price{
+
+  font-family:
+  'Space Grotesk',
+  sans-serif;
+
+  font-weight:600;
+
+  font-size:20px;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+PARAGRAPH
+========================= */
+
+p{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  color:#6b7280;
+}
+
+@media (max-width:768px){
+  nav{
+    padding:12px 16px;
+    flex-wrap:wrap;
+  }
+
+  nav .logo img{
+    height:42px;
+  }
+
+  nav .menu{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+  }
 }
