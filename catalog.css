@@ -1,102 +1,6 @@
-/* ===== PROFESSIONAL FONT IMPORT ===== */
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-
-
-/* ===== BODY ===== */
-
-body{
-
-  font-family:'DM Sans',sans-serif;
-
-  font-weight:400;
-
-  font-size:16px;
-
-  letter-spacing:.3px;
-
-  color:#1f2937;
-
-}
-
-
-/* ===== MAIN TITLE ===== */
-
-h1{
-
-  font-family:'Playfair Display',serif;
-
-  font-weight:700;
-
-  letter-spacing:1.2px;
-
-}
-
-
-/* ===== SUB TITLE ===== */
-
-h2,h3,.section-title{
-
-  font-family:'Playfair Display',serif;
-
-  font-weight:600;
-
-  letter-spacing:.5px;
-
-}
-
-
-/* ===== MENU ===== */
-
-.menu a{
-
-  font-family:'DM Sans',sans-serif;
-
-  font-weight:500;
-
-  letter-spacing:.5px;
-
-}
-
-
-/* ===== BUTTON ===== */
-
-.btn,
-.hero-btn{
-
-  font-family:'DM Sans',sans-serif;
-
-  font-weight:500;
-
-}
-
-
-/* ===== PRICE ===== */
-
-.price{
-
-  font-family:'DM Sans',sans-serif;
-
-  font-weight:700;
-
-  font-size:20px;
-
-  letter-spacing:.5px;
-
-}
-
-
-/* ===== DESCRIPTION ===== */
-
-p{
-
-  font-family:'DM Sans',sans-serif;
-
-  font-weight:400;
-
-  color:#6b7280;
-
-}
 
 :root{
   --wood-dark:#2c1f1a;
@@ -638,4 +542,202 @@ color:var(--wood-main);
 
 transform:scale(1.1);
 
+}
+
+/* ========================= */
+/* ===== SCROLL REVEAL PREMIUM ===== */
+/* ========================= */
+
+/* ซ่อนก่อน */
+.catalog-title,
+.catalog-subtitle,
+.catalog-book{
+
+opacity:0;
+
+transform:
+translateY(60px)
+scale(.95);
+
+filter:blur(10px);
+
+transition:
+opacity 1s ease,
+transform 1s ease,
+filter 1s ease;
+
+}
+
+
+/* ตอนโผล่ */
+
+.show{
+
+opacity:1;
+
+transform:
+translateY(0)
+scale(1);
+
+filter:blur(0);
+
+}
+
+
+/* delay */
+
+.catalog-subtitle.show{
+
+transition-delay:.3s;
+
+}
+
+.catalog-book.show{
+
+transition-delay:.6s;
+
+}
+
+body{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  font-size:16px;
+
+  letter-spacing:.2px;
+
+  color:#1f2937;
+
+}
+
+
+/* =========================
+MAIN TITLE
+========================= */
+
+h1{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:600;
+
+  letter-spacing:1.8px;
+
+}
+
+
+/* =========================
+SUB TITLE
+========================= */
+
+h2,
+h3,
+.section-title{
+
+  font-family:
+  'Cormorant Garamond',
+  'IBM Plex Sans Thai',
+  serif;
+
+  font-weight:500;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+MENU
+========================= */
+
+.menu a{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.8px;
+
+}
+
+
+/* =========================
+BUTTON
+========================= */
+
+.btn,
+.hero-btn{
+
+  font-family:
+  'Space Grotesk',
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:500;
+
+  letter-spacing:.5px;
+
+}
+
+
+/* =========================
+PRICE
+========================= */
+
+.price{
+
+  font-family:
+  'Space Grotesk',
+  sans-serif;
+
+  font-weight:600;
+
+  font-size:20px;
+
+  letter-spacing:1px;
+
+}
+
+
+/* =========================
+PARAGRAPH
+========================= */
+
+p{
+
+  font-family:
+  'IBM Plex Sans Thai',
+  sans-serif;
+
+  font-weight:400;
+
+  color:#6b7280;
+}
+
+@media (max-width:768px){
+  nav{
+    padding:12px 16px;
+    flex-wrap:wrap;
+  }
+
+  nav .logo img{
+    height:42px;
+  }
+
+  nav .menu{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+  }
 }
