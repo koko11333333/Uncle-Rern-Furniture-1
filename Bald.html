@@ -251,11 +251,30 @@ function openAR(){
 
 function closeAR(){
   document.getElementById("arModal").style.display = "none";
+
 }
 </script>
+<script>
 
+/* ===== SCROLL SHOW RELATED ===== */
+
+const related = document.querySelector('.related-section');
+
+window.addEventListener('scroll', () => {
+
+  const position = related.getBoundingClientRect().top;
+  const screen = window.innerHeight;
+
+  if(position < screen - 100){
+
+    related.classList.add('show');
+
+  }
+
+});
+
+</script>
 </body>
 
 </html>
-
 
